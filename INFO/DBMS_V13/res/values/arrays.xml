@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="grades">
+ 
+        <item>2013级</item>
+        <item>2012级</item>
+        <item>2011级</item>
+        <item>2010级</item>
+        
+    </string-array>
+    
+    <string-array name="direction0">
+ 
+        <item>教务1班</item>
+        <item>教务2班</item>
+        <item>教务3班</item>
+        <item>教务4班</item>
+        <item>教务5班</item>
+        
+    </string-array>
+     
+    <string-array name="direction1">
+    
+        <item>计算机应用软件</item>
+        <item>嵌入式软件系统</item>
+        <item>数字媒体</item>
+        <item>通信软件</item>
+        <item>电子政务</item>
+    
+    </string-array>
+    
+    <string-array name="status">
+        
+        <item>普通学生</item>
+        <item>班级学委</item>
+        <item>教学助理</item>
+        
+    </string-array>
+    
+    <string-array name="classify">
+        
+        <item>专业必修课</item>
+        <item>专业选修课</item>
+        
+    </string-array>
+</resources>

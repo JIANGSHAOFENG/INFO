@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dbms_v2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/symbol_information"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+    <activity 
+        android:name=".Main"
+        android:label="@string/app_name">
+    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+    </activity>
+    <activity
+       android:name=".ResisterPage"></activity>
+    <activity
+       android:name=".MainActivity"
+       android:label="INFO"
+       ></activity>
+    <activity
+        android:name=".Information_activity"
+        android:label="INFO"
+    ></activity>
+    </application>
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+</manifest>

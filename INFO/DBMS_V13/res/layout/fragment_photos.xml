@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f0f0">
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+      <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:text="基本信息"
+      android:textSize="19sp"
+      android:textColor="#000000"/>
+    </LinearLayout>
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@drawable/prefresh_list_cutline" />
+     <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="10dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:layout_marginTop="10dp"
+     android:background="@drawable/input"
+     android:orientation="vertical" >
+       <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:orientation="horizontal" >
+          <TextView
+          android:layout_width="80sp"
+          android:layout_height="wrap_content"
+          android:text="收件人"
+          android:gravity="right"
+          android:textColor="#000000"
+          android:textSize="19sp" />
+          <Spinner
+          android:id="@+id/information_receiver"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="28dp"
+          android:drawSelectorOnTop="true"/>
+        </LinearLayout>
+        <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:background="@drawable/prefresh_list_cutline" />
+        <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:orientation="horizontal" >
+             <TextView
+             android:layout_width="80sp"
+             android:layout_height="wrap_content"
+             android:text="主题"
+             android:gravity="right"
+             android:textColor="#000000"
+             android:textSize="19sp" />
+             <EditText
+             android:id="@+id/information_theme"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_weight="1"
+             android:background="@null"
+             android:hint="请输入信息主题"
+             android:textSize="19sp" >
+             <requestFocus />
+             </EditText>
+         </LinearLayout>
+         <View
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+         android:background="@drawable/prefresh_list_cutline" />
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+            <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="截止日期"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+            <TextView
+            android:id="@+id/information_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择截止日期"
+            android:textSize="19sp" >
+            <requestFocus />
+            </TextView>
+         </LinearLayout>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/prefresh_list_cutline" />
+         </LinearLayout>
+         <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+           <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:text="正文"
+           android:textSize="19sp"
+           android:textColor="#000000"/>
+        </LinearLayout>
+        <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:background="@drawable/prefresh_list_cutline" />
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:orientation="vertical" >
+          <EditText 
+           android:id="@+id/information_text"
+           android:layout_width="fill_parent"
+           android:gravity="top"
+           android:layout_height="250dp"
+           android:hint="请输入内容"
+              />
+       </LinearLayout>
+       <Button
+       android:id="@+id/information_comfirm"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:background="@drawable/register_button_select"
+       android:paddingBottom="14dp"
+       android:paddingTop="14dp"
+       android:text="发送"
+       android:textSize="19sp" />
+</LinearLayout>
+</ScrollView>
