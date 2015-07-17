@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="wrap_content"
+	android:background="@drawable/layout_bg">
+
+	<LinearLayout 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:paddingLeft="23dp"
+		android:paddingRight="23dp" android:paddingTop="10dp" android:id="@+id/timePicker1">
+
+		<com.selector.WheelView
+			android:id="@+id/year" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>"
+		<com.selector.WheelView
+			android:id="@+id/month" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>
+		<com.selector.WheelView
+			android:id="@+id/day" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>"
+		<com.selector.WheelView
+			android:id="@+id/hour" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>"
+		<com.selector.WheelView
+			android:id="@+id/mins" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"/>"
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+		android:layout_below="@id/timePicker1" android:layout_marginTop="12dp"
+		android:layout_centerInParent="true">
+		<Button android:id="@+id/btn_datetime_sure"
+			android:layout_width="match_parent"
+			android:text="确定"
+			android:textSize="19sp"
+			android:layout_below="@id/timePicker1" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+
+</RelativeLayout>
